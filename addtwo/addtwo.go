@@ -32,7 +32,7 @@ func (l *ListNode) GetNext() *ListNode {
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	var node, prev *ListNode
 	var carry int
-	for l1 != nil || l2 != nil {
+	for l1 != nil || l2 != nil || carry != 0 {
 		sum := l1.GetVal() + l2.GetVal() + carry
 		if sum >= 10 {
 			carry = 1
