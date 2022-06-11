@@ -29,7 +29,7 @@ func (l *ListNode) GetNext() *ListNode {
 	return l.Next
 }
 
-func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+func addTwoNumbersEasy(l1 *ListNode, l2 *ListNode) *ListNode {
 	var node, prev *ListNode
 	var carry int
 	for l1 != nil || l2 != nil || carry != 0 {
