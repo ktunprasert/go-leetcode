@@ -22,8 +22,11 @@ package longestsubstring
 // }
 
 func lengthOfLongestSubstring(s string) int {
+	if len := len(s); len < 2 {
+		return len
+	}
 	buffer := make(map[rune]int)
-	var total, max int = 1, 1
+	var total, max int = 1, 0
 	for i := 0; i < len(s)-1; i++ {
 		l, r := rune(s[i]), rune(s[i+1])
 		buffer[l] = 1
