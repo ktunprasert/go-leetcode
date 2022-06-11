@@ -9,12 +9,13 @@ func lengthOfLongestSubstring(s string) int {
 			if max < total {
 				max = total
 			}
-			total = 0
+			total = 1
 		} else {
-			buffer[r] = 1
 			total++
 		}
+		buffer[r] = 1
 	}
+
 	if total > max {
 		return total
 	}

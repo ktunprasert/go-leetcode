@@ -14,6 +14,7 @@ func TestLongestSubString(t *testing.T) {
 		{"example_1", "abcabcbb", 3},
 		{"example_2", "bbbbb", 1},
 		{"example_3", "pwwkew", 3},
+		{"gotcha_1", "aab", 2},
 	}
 	for _, tc := range cases {
 		t.Run(tc.name, func(t *testing.T) {
