@@ -1,6 +1,6 @@
 package longestsubstring
 
-func lengthOfLongestSubstring(s string) int {
+func lengthOfLongestSubstringNaive(s string) int {
 	if len := len(s); len < 2 {
 		return len
 	}
