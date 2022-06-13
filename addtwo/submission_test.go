@@ -5,22 +5,7 @@ import (
 	"testing"
 )
 
-func ListNodeFromArray(arr []int) *ListNode {
-	var node, curr *ListNode
-	for _, n := range arr {
-		if node == nil {
-			node = &ListNode{n, nil}
-			curr = node
-		} else {
-			new := &ListNode{n, nil}
-			curr.Next = new
-			curr = new
-		}
-	}
-	return node
-}
-
-func TestAddTwoNaive(t *testing.T) {
+func TestAddTwoSubmission(t *testing.T) {
 	for _, tc := range cases {
 		t.Run(fmt.Sprintf("naive/%s", tc.name), func(t *testing.T) {
 			l1 := ListNodeFromArray(tc.inputL1)
