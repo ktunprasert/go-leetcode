@@ -13,9 +13,9 @@ func Test_reverseList(t *testing.T) {
 		args args
 		want *ListNode
 	}{
-		{"e1", args{buildLinkedList([]int{1, 2, 3, 4, 5})}, buildLinkedList([]int{5, 4, 3, 2, 1})},
-		{"e2", args{buildLinkedList([]int{1, 2})}, buildLinkedList([]int{2, 1})},
-		{"gotcha", args{buildLinkedList([]int{})}, nil},
+		{"e1", args{BuildLinkedList([]int{1, 2, 3, 4, 5})}, BuildLinkedList([]int{5, 4, 3, 2, 1})},
+		{"e2", args{BuildLinkedList([]int{1, 2})}, BuildLinkedList([]int{2, 1})},
+		{"gotcha", args{BuildLinkedList([]int{})}, nil},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
