@@ -38,3 +38,16 @@ func BuildBinaryTree(vals []int, imba int) *TreeNode {
 	}
 	return tree
 }
+
+type args struct {
+	root *TreeNode
+}
+
+var tests = []struct {
+	name string
+	args args
+	want *TreeNode
+}{
+	{"e1", args{BuildBinaryTree([]int{4, 2, 7, 1, 3, 6, 9}, 1)}, BuildBinaryTree([]int{4, 7, 2, 9, 6, 3, 1}, -1)},
+	{"e2", args{BuildBinaryTree([]int{2, 1, 3}, 1)}, BuildBinaryTree([]int{2, 3, 1}, -1)},
+}
