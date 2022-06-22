@@ -11,9 +11,9 @@ func Test_isHappy(t *testing.T) {
 		args args
 		want bool
 	}{
-		// {"e1", args{19}, true},
+		{"e1", args{19}, true},
 		{"e2", args{2}, false},
-		// {"gotcha1", args{7}, true},
+		{"gotcha1", args{7}, true},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
